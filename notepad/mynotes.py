@@ -23,7 +23,6 @@ class TextEdit(QTextEdit):
             return super(TextEdit, self).canInsertFromMimeData(source)
 
     def insertFromMimeData(self, source):
-        print("Me")
 
         cursor = self.textCursor()
         document = self.document()
